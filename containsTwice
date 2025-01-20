@@ -1,0 +1,12 @@
+public static boolean containsTwice(String ustr, char uchar){
+    int counter = 0;
+    for (int i=0; i<ustr.length(); i++){
+        if (Character.toLowerCase(ustr.charAt(i)) == Character.toLowerCase(uchar)){
+            counter++;
+        }
+        if (counter == 2){
+            return true;
+        }
+    }
+    return false;
+}
